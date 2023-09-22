@@ -11,7 +11,7 @@ router.get("/getAllMeals", (req, res, next) => {
         .catch(err => next(err))
 });
 
-router.get("/getMeal/:meal_id", (req, res, next) => {
+router.get("/getOneMeal/:meal_id", (req, res, next) => {
 
     const { meal_id } = req.params
 
